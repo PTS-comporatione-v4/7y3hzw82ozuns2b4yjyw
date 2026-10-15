@@ -4,14 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CICADA 6845 // test 07</title>
-<!--
-  CICADA 6845 — TEST 07 (FÁZA 2, variant A).
-  cesta A (pravá): Enigma I DECODE "jfp xwowo ghadehaw 40, wunqm fu isyehz." → "KTO NAJDE VSETKYCH 40, NAJDE AJ VYCHOD." → vychod; fragmenty 7.1–7.4.
-  cesta B (pasca): Enigma I DECODE "saztvd bo mzj dwrg, oafou fczo vgmxfdsm." → "PRAVDA JE LEN TIEN, KTORY VRHA KLAMSTVO." → klamstvo; 2-znakový mini kúsok.
-  Nastavenia overené na cryptii.com 7.10.2026.
-  Odpoveď = POSLEDNÉ slovo dekódovaného textu.
-  CISLO_FAZY = 7.
--->
+<!-- CICADA 6845 — TEST 07. -->
 <style>
   body { background:#0a0a0a; color:#c8c8c8; font-family:Georgia,serif;
          max-width:640px; margin:8vh auto; padding:0 24px; line-height:1.7; }
@@ -55,7 +48,7 @@
   Len jedna cesta je pravá.
 </div>
 
-<!-- ================= CESTA A (pravá) ================= -->
+<!-- ================= CESTA A ================= -->
 <div class="cesta">
 <h2>CESTA A — prvý text</h2>
 <div class="hadanka">
@@ -67,7 +60,7 @@
 <div class="vysledok" id="vyslA"></div>
 </div>
 
-<!-- ================= CESTA B (pasca) ================= -->
+<!-- ================= CESTA B ================= -->
 <div class="cesta">
 <h2>CESTA B — druhý text</h2>
 <div class="hadanka">
@@ -86,7 +79,7 @@
 </p>
 
 <script>
-// SCHVÁLENÉ 7.10.2026 — A: "vychod"; B: "klamstvo".
+// SCHVÁLENÉ 7.10.2026 — variant A.
 // CISLO_FAZY = 7 sa NESMIE meniť (je súčasťou hashov).
 const CISLO_FAZY = 7;
 const REALNA = "A";
